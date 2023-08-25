@@ -79,3 +79,20 @@ Please note that this controller uses the GitHub REST API to retrieve repository
 For usage, make sure to replace `{username}` with the actual GitHub username in the endpoint URL.
 
 For further information on how to use and integrate this controller, refer to the official Spring Boot documentation.
+
+To run this Spring Boot application locally, follow these steps:
+
+1. **Clone the Repository**: Clone this repository to your local machine using Git:
+2. **Build the Application**: Navigate to the root directory of the project and build the application using Maven:
+    ```shell
+    mvn clean install
+    ```
+3. **Run the Application**: Run the application using Maven:
+    ```shell
+       mvn spring-boot:run
+        ```
+4. **Test the Application**: Test the application using cURL or any other HTTP client:
+    ```shell
+    curl -X GET http://localhost:8080/api/github/repositories/{username}
+    ```
+5. **Stop the Application**: Stop the application by pressing `Ctrl + C` in the terminal window where the application is running.
